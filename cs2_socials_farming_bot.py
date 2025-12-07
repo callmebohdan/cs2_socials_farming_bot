@@ -9,8 +9,8 @@ from telegram.constants import ParseMode
 from urllib.parse import urlparse
 import re
 
-TELEGRAM_BOT_TOKEN = "8211593813:AAFrW1X-VNci98aWeGXFM4jAn9qkfEqh73A"
-TELEGRAM_CHAT_ID   = "303629260"
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+TELEGRAM_CHAT_ID   = os.getenv("TELEGRAM_CHAT_ID")
 CHECK_INTERVAL = 180  # 3 minutes – fast & safe
 
 # Your original feeds (with site/platform parsing)
