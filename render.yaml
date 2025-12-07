@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: cs2_socials_farming_bot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python cs2_socials_farming_bot.py
+    autoDeploy: true
